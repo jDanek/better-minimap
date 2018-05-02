@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="39">
+    <version>1.0</version>
+    <author>jDanek.eu</author>
+    <title>
+        <en>Better Minimap</en>
+    </title>
+
+    <description>
+        <en><![CDATA[Enhanced minimap with field state colors]]></en>
+    </description>
+
+    <multiplayer supported="true"/>
+    <iconFilename>store.png</iconFilename>
+
+    <l10n>
+        <text name="input_BM_REALOAD">
+            <en>Better Minimap: Reload field state</en>
+        </text>
+        <text name="input_BM_NEXT">
+            <en>Better Minimap: Show next states</en>
+        </text>
+        <text name="input_BM_PREV">
+            <en>Better Minimap: Show prev states</en>
+        </text>
+        <text name="input_BM_MORE">
+            <en>Better Minimap: Show more statistics</en>
+        </text>
+        <text name="input_BM_MAP_ZOOM_IN">
+            <en>Better Minimap: Map zoom in</en>
+        </text>
+        <text name="input_BM_MAP_ZOOM_OUT">
+            <en>Better Minimap: Map zoom out</en>
+        </text>
+    </l10n>
+
+    <inputBindings>
+        <input name="BM_RELOAD" category="ONFOOT VEHICLE" key1="KEY_backslash" key2="" button="" device="0"
+               mouse=""/>
+        <input name="BM_PREV" category="ONFOOT VEHICLE" key1="KEY_leftbracket" key2="" button="" device="0"
+               mouse=""/>
+        <input name="BM_NEXT" category="ONFOOT VEHICLE" key1="KEY_rightbracket" key2="" button="" device="0"
+               mouse=""/>
+        <input name="BM_MORE" category="ONFOOT VEHICLE" key1="KEY_9" key2="" button="" device="0" mouse=""/>
+        <input name="BM_MAP_ZOOM_IN" category="ONFOOT VEHICLE" key1="KEY_lalt KEY_KP_plus" key2="" button=""
+               device="0" mouse=""/>
+        <input name="BM_MAP_ZOOM_OUT" category="ONFOOT VEHICLE" key1="KEY_lalt KEY_KP_minus" key2="" button=""
+               device="0" mouse=""/>
+    </inputBindings>
+
+    <extraSourceFiles>
+        <sourceFile filename="BM.lua"/>
+    </extraSourceFiles>
+
+</modDesc>
