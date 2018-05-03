@@ -1,36 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="39">
-    <version>1.0</version>
-    <author>jDanek.eu</author>
+    <version>1.0.0.0</version>
+    <author>jDanek</author>
     <title>
         <en>Better Minimap</en>
+		<de>Bessere Minimap</de>
+		<fr>Meilleure Minicarte</fr>
     </title>
 
     <description>
-        <en><![CDATA[Enhanced minimap with field state colors]]></en>
+        <en><![CDATA[
+A better minimap, replacing the original minimap in the game. Shows field color fields directly, without having to open menu InGameMenu, refresh statuses are done once a minute or by zooming the map (by default, key 9)
+]]></en>
+		<de><![CDATA[
+Eine bessere Minikarte, die die ursprüngliche Minikarte im Spiel ersetzt. Zeigt Feld-Farbfelder direkt an, ohne das Menü InGameMenu zu öffnen, Aktualisierungsstatus werden einmal pro Minute ausgeführt oder durch Zoomen der Karte (standardmäßig Taste 9)
+]]></de>
+		<fr><![CDATA[
+Une meilleure minicarte, remplaçant la minicarte originale dans le jeu. Affiche les champs de couleur de champ directement, sans avoir à ouvrir le menu InGameMenu, les statuts d'actualisation sont effectués une fois par minute ou en zoomant sur la carte (par défaut, touche 9)
+]]></fr>
     </description>
 
     <multiplayer supported="true"/>
-    <iconFilename>store.png</iconFilename>
+    <iconFilename>store.dds</iconFilename>
 
     <l10n>
         <text name="input_BM_REALOAD">
             <en>Better Minimap: Reload field state</en>
+            <de>Bessere Minimap: Feldstatus erneut laden</de>
+            <fr>Meilleure Minicarte: Recharger l'état du champ</fr>
         </text>
         <text name="input_BM_NEXT">
             <en>Better Minimap: Show next states</en>
+            <de>Bessere Minimap: Zeige nächste Bundesländer</de>
+            <fr>Meilleure Minicarte: Afficher les prochains états</fr>
         </text>
         <text name="input_BM_PREV">
             <en>Better Minimap: Show prev states</en>
+            <de>Bessere Minimap: Zeige vorherige Bundesländer</de>
+            <fr>Meilleure Minicarte: Afficher les états précédents</fr>
         </text>
         <text name="input_BM_MORE">
             <en>Better Minimap: Show more statistics</en>
+            <de>Bessere Minimap: Zeige mehr Statistiken</de>
+            <fr>Meilleure Minicarte: Afficher plus de statistiques</fr>
         </text>
         <text name="input_BM_MAP_ZOOM_IN">
             <en>Better Minimap: Map zoom in</en>
+            <de>Bessere Minimap: Karte vergrößern</de>
+            <fr>Meilleure Minicarte: Carte zoom avant</fr>
         </text>
         <text name="input_BM_MAP_ZOOM_OUT">
             <en>Better Minimap: Map zoom out</en>
+            <de>Bessere Minimap: Karte verkleinern</de>
+            <fr>Meilleure Minicarte: Carte zoom arrière</fr>
         </text>
     </l10n>
 

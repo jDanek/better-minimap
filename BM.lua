@@ -7,8 +7,6 @@ end ;
 
 BM.refreshFreq = 60000;
 
-BM.screen = nil;
-
 BM.mapEvents = {};
 BM.panFactor = 0.0007;
 BM.zoomFactor = 0.0007;
@@ -17,10 +15,8 @@ function BM:init(width)
     self.overlayPosX = 0.003;
     self.overlayPosY = 0.005;
     self.overlayWidth = width or 1 / 3;
-
     self.pixelWidth = self.overlayWidth / 1024.0;
     self.pixelHeight = self.pixelWidth * g_screenAspectRatio;
-
     self.screenOffsetX = self.overlayPosX + (92 * self.pixelWidth); -- 92
     self.screenOffsetY = self.overlayPosY + (46 * self.pixelHeight); --46
     self.screenWidth = 456 * self.pixelWidth;
@@ -29,11 +25,9 @@ end;
 
 function BM:loadMap(name)
     self.showMap = false;
-
     self.isActive = false;
     self.showState = 0;
     self.needUpdate = true;
-
     self.timer = 0;
     self.fullScreen = false;
     self.centerXPos = 0.5;
@@ -41,11 +35,10 @@ function BM:loadMap(name)
     self.isPanning = false;
     self.visWidth = 0.3;
     self.mapWidth, self.mapHeight = self.screenWidth, self.screenHeight;
-
 end;
 
 function BM:deleteMap()
-	self:hide();
+    self:hide();
 end;
 
 function BM:mouseEvent(posX, posY, isDown, isUp, button)
@@ -67,7 +60,7 @@ function BM:hide()
 end;
 
 function BM:update(dt)
-      if not self.showMap then
+    if not self.showMap then
         self:show();
     end ;
 
@@ -76,7 +69,7 @@ function BM:update(dt)
     if g_gui:getIsGuiVisible() and g_gui.currentGuiName == "InGameMenu" then
         self.needUpdate = true;
     end ;
-    
+
     if self.timer < self.refreshFreq then
         self.timer = self.timer + dt;
     else
@@ -97,7 +90,7 @@ function BM:update(dt)
 
         if InputBinding.hasEvent(InputBinding.BM_RELOAD) then
             self:generateFruitOverlay();
-        end;
+        end ;
 
         if InputBinding.hasEvent(InputBinding.BM_PREV) then
             self.showState = self.showState - 1;
@@ -110,7 +103,7 @@ function BM:update(dt)
         end ;
 
         if InputBinding.hasEvent(InputBinding.TOGGLE_MAP_SIZE) then
-
+            -- reload field states if maximized map
             self:generateFruitOverlay();
 
             self.fullScreen = not self.fullScreen;
@@ -151,9 +144,7 @@ function BM:draw()
         IngameMap.iconZoom = ingameMap.maxIconZoom;
 
         ingameMap:updatePlayerPosition();
-
         ingameMap:setPosition(self.screenOffsetX, self.screenOffsetY);
-
         ingameMap:setSize(self.mapWidth, self.mapHeight);
 
         if self.fullScreen then
@@ -166,7 +157,6 @@ function BM:draw()
         ingameMap.centerZPos = ingameMap.normalizedPlayerPosZ;
 
         local leftBorderReached, rightBorderReached, topBorderReached, bottomBorderReached = ingameMap:drawMap(self.alpha)
-
         local foliageOverlay = g_inGameMenu.foliageStateOverlay;
 
         if self.showState ~= 0 and getIsFoliageStateOverlayReady(foliageOverlay) then
@@ -177,7 +167,6 @@ function BM:draw()
         ingameMap:renderHotspots(leftBorderReached, rightBorderReached, topBorderReached, bottomBorderReached, false, self.fullScreen);
         ingameMap:renderPlayerArrows(false, leftBorderReached, rightBorderReached, topBorderReached, bottomBorderReached, true);
         ingameMap:renderHotspots(leftBorderReached, rightBorderReached, topBorderReached, bottomBorderReached, true, self.fullScreen);
-
         ingameMap:renderPlayersCoordinates();
         ingameMap:drawLatencyToServer();
         ingameMap:drawInputBinding();
@@ -199,7 +188,6 @@ function BM:deactivate()
 end;
 
 function BM:generateFruitOverlay()
-
     local origState = g_inGameMenu.mapOverviewSelector.state;
     g_inGameMenu.mapOverviewSelector.state = self.showState;
     g_inGameMenu:generateFruitOverlay();
