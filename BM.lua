@@ -114,7 +114,7 @@ function BM:update(dt)
             end ;
         end ;
 
-        if (InputBinding.hasEvent(InputBinding.TOGGLE_SIZE)) then
+        if (InputBinding.hasEvent(InputBinding.TOGGLE_MAP_SIZE)) then
             -- reload field states if change size map
             self.needUpdateFruitOverlay = true;
             -- toggle fullscreen mode

@@ -4,9 +4,9 @@
     <author>jDanek</author>
     <title>
         <en>Better Minimap</en>
-		<de>Bessere Minimap</de>
-		<fr>Meilleure Minicarte</fr>
-		<cz>Lepší Minimapa</cz>
+        <de>Bessere Minimap</de>
+        <fr>Meilleure Minicarte</fr>
+        <cz>Lepší Minimapa</cz>
     </title>
 
     <description>
@@ -22,7 +22,7 @@ Function:
 - Switching transparency
 - Zoom in and out of the minimap
 ]]></en>
-		<de><![CDATA[
+        <de><![CDATA[
 Eine bessere Minikarte, die die ursprüngliche Minikarte im Spiel ersetzt. Fügt die Fähigkeit hinzu, Bildgebungsmodi (Pflanzen, Pflanzenwachstum und Boden) direkt in Minikarte zu wechseln. Diese Status werden automatisch nach 60 Sekunden wiederhergestellt, indem Sie den Modus ändern oder die Größe der Minikarte ändern.
 
 Eigenschaften:
@@ -34,7 +34,7 @@ Eigenschaften:
 - Transparenz wechseln
 - Vergrößern und verkleinern der Minikarte
 ]]></de>
-		<fr><![CDATA[
+        <fr><![CDATA[
 Une meilleure minicarte qui remplace la minicarte originale dans le jeu. Ajoute la possibilité de changer de mode d'imagerie (plantes, croissance des plantes et sol) directement en minicarte. Ces états sont automatiquement restaurés après 60 secondes en changeant le mode ou en redimensionnant la minicarte.
 
 Caractéristiques:
@@ -46,7 +46,7 @@ Caractéristiques:
 - Transparence de commutation
 - Zoom avant et arrière sur la minicarte
 ]]></fr>
-		<cz><![CDATA[
+        <cz><![CDATA[
 Lepší minimapa, který nahrazuje původní minimapu ve hře. Přidá možnost přepínat zobrazovací režimy (rostliny, růst rostlin a půda) přímo v minimapě. Tyto stavy se automaticky obnoví po 60 sekundách, změnou režimu nebo změnou velikosti minimapu.
 
 Funkce:
@@ -65,10 +65,10 @@ Funkce:
 
     <l10n>
         <text name="BM_MapMode">
-            <en>Display: </en>
-            <de>Anzeige: </de>
-            <fr>Affichage: </fr>
-            <cz>Zobrazení: </cz>
+            <en>Display:</en>
+            <de>Anzeige:</de>
+            <fr>Affichage:</fr>
+            <cz>Zobrazení:</cz>
         </text>
         <text name="BM_MapMode_S0">
             <en>Normal</en>
@@ -105,19 +105,19 @@ Funkce:
             <en>Minimap: Manual reload</en>
             <de>Minimap: Manuelles Nachladen</de>
             <fr>Minicarte: Rechargement manuel</fr>
-			<cz>Minimapa: Manuální obnovení</cz>
+            <cz>Minimapa: Manuální obnovení</cz>
         </text>
         <text name="input_BM_NEXT">
             <en>Minimap: Next mode</en>
             <de>Minimap: Ein anderer Modus</de>
             <fr>Minicarte: Un autre mode</fr>
-			<cz>Minimapa: Následující režim</cz>
+            <cz>Minimapa: Následující režim</cz>
         </text>
         <text name="input_BM_PREV">
             <en>Minimap: Prev mode</en>
             <de>Minimap: Vorheriger Modus</de>
             <fr>Minicarte: Mode précédent</fr>
-			<cz>Minimapa: Předchozí režim</cz>
+            <cz>Minimapa: Předchozí režim</cz>
         </text>
         <text name="input_BM_CHANGE_SIZE">
             <en>Minimap: Resize</en>
@@ -135,13 +135,13 @@ Funkce:
             <en>Minimap: Zoom in</en>
             <de>Minimap: Heranzoomen</de>
             <fr>Minicarte: Zoom avant</fr>
-			<cz>Minimapa: Přiblížení</cz>
+            <cz>Minimapa: Přiblížení</cz>
         </text>
         <text name="input_BM_ZOOM_OUT">
             <en>Minimap: Zoom out</en>
             <de>Minimap: Verkleinern</de>
             <fr>Minicarte: Zoom arrière</fr>
-			<cz>Minimapa: Oddálení</cz>
+            <cz>Minimapa: Oddálení</cz>
         </text>
     </l10n>
 
@@ -154,10 +154,10 @@ Funkce:
                mouse=""/>
         <input name="BM_NEXT" category="ONFOOT VEHICLE" key1="KEY_rightbracket" key2="" button="" device="0"
                mouse=""/>
-		<input name="BM_CHANGE_SIZE" category="ONFOOT VEHICLE" key1="KEY_lalt KEY_9" key2="" button="" device="0"
+        <input name="BM_CHANGE_SIZE" category="ONFOOT VEHICLE" key1="KEY_lalt KEY_9" key2="" button="" device="0"
                mouse=""/>
-        <input name="BM_TOGGLE_ALPHA" category="ONFOOT VEHICLE" key1="KEY_lshift KEY_lalt KEY_9" key2="" button="" device="0"
-               mouse=""/>
+        <input name="BM_TOGGLE_ALPHA" category="ONFOOT VEHICLE" key1="KEY_lshift KEY_lalt KEY_9" key2="" button=""
+               device="0" mouse=""/>
         <input name="BM_ZOOM_IN" category="ONFOOT VEHICLE" key1="KEY_lalt KEY_KP_plus" key2="" button=""
                device="0" mouse=""/>
         <input name="BM_ZOOM_OUT" category="ONFOOT VEHICLE" key1="KEY_lalt KEY_KP_minus" key2="" button=""
