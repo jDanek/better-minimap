@@ -6,67 +6,161 @@
         <en>Better Minimap</en>
 		<de>Bessere Minimap</de>
 		<fr>Meilleure Minicarte</fr>
+		<cz>Lepší Minimapa</cz>
     </title>
 
     <description>
         <en><![CDATA[
-A better minimap, replacing the original minimap in the game. Shows field color fields directly, without having to open menu InGameMenu, refresh statuses are done once a minute or by zooming the map (by default, key 9)
+A better minimap that replaces the original minimap in the game. Adds the ability to switch imaging modes (plants, plant growth and soil) directly in minimap. These states are automatically restored after 60 seconds by changing the mode or resizing the minimap.
+
+Function:
+- Color status indication
+- The active mode is listed under the minimap
+- Automatic re-reading of states after 60s with deduction
+- Change the size of the minimap (normal / wide / larger)
+- Remembers the selected size during play
+- Switching transparency
+- Zoom in and out of the minimap
 ]]></en>
 		<de><![CDATA[
-Eine bessere Minikarte, die die ursprüngliche Minikarte im Spiel ersetzt. Zeigt Feld-Farbfelder direkt an, ohne das Menü InGameMenu zu öffnen, Aktualisierungsstatus werden einmal pro Minute ausgeführt oder durch Zoomen der Karte (standardmäßig Taste 9)
+Eine bessere Minikarte, die die ursprüngliche Minikarte im Spiel ersetzt. Fügt die Fähigkeit hinzu, Bildgebungsmodi (Pflanzen, Pflanzenwachstum und Boden) direkt in Minikarte zu wechseln. Diese Status werden automatisch nach 60 Sekunden wiederhergestellt, indem Sie den Modus ändern oder die Größe der Minikarte ändern.
+
+Eigenschaften:
+- Farbstatusanzeige
+- Der aktive Modus ist unter der Minikarte aufgeführt
+- Automatisches erneutes Lesen von Zuständen nach 60s mit Abzug
+- Ändere die Größe der Minikarte (normal / weit / größer)
+- Erinnert sich an die gewählte Größe während der Wiedergabe
+- Transparenz wechseln
+- Vergrößern und verkleinern der Minikarte
 ]]></de>
 		<fr><![CDATA[
-Une meilleure minicarte, remplaçant la minicarte originale dans le jeu. Affiche les champs de couleur de champ directement, sans avoir à ouvrir le menu InGameMenu, les statuts d'actualisation sont effectués une fois par minute ou en zoomant sur la carte (par défaut, touche 9)
+Une meilleure minicarte qui remplace la minicarte originale dans le jeu. Ajoute la possibilité de changer de mode d'imagerie (plantes, croissance des plantes et sol) directement en minicarte. Ces états sont automatiquement restaurés après 60 secondes en changeant le mode ou en redimensionnant la minicarte.
+
+Caractéristiques:
+- Indication d'état de la couleur
+- Le mode actif est répertorié sous la minicarte
+- Relecture automatique des états après 60s avec déduction
+- Changer la taille de la minicarte (normale / large / plus grande)
+- Se souvient de la taille sélectionnée pendant la lecture
+- Transparence de commutation
+- Zoom avant et arrière sur la minicarte
 ]]></fr>
+		<cz><![CDATA[
+Lepší minimapa, který nahrazuje původní minimapu ve hře. Přidá možnost přepínat zobrazovací režimy (rostliny, růst rostlin a půda) přímo v minimapě. Tyto stavy se automaticky obnoví po 60 sekundách, změnou režimu nebo změnou velikosti minimapu.
+
+Funkce:
+- Barevná indikace stavu polí
+- Aktivní režim je vypsán pod minimapou
+- Automatické znovunačtení stavů po 60s s odpočtem
+- Změna velikost minimapy (normální / široký / větší)
+- Pamatuje si zvolenou velikost během hry
+- Přepínání průhlednosti
+- Přiblížení a oddálení minimapy
+		]]></cz>
     </description>
 
     <multiplayer supported="true"/>
     <iconFilename>store.dds</iconFilename>
 
     <l10n>
-        <text name="input_BM_REALOAD">
-            <en>Better Minimap: Reload field state</en>
-            <de>Bessere Minimap: Feldstatus erneut laden</de>
-            <fr>Meilleure Minicarte: Recharger l'état du champ</fr>
+        <text name="BM_MapMode">
+            <en>Display: </en>
+            <de>Anzeige: </de>
+            <fr>Affichage: </fr>
+            <cz>Zobrazení: </cz>
+        </text>
+        <text name="BM_MapMode_S0">
+            <en>Normal</en>
+            <de>Normal</de>
+            <fr>Normal</fr>
+            <cz>Normální</cz>
+        </text>
+        <text name="BM_MapMode_S1">
+            <en>Fruit types</en>
+            <de>Feldfrüchte</de>
+            <fr>Types de cultures</fr>
+            <cz>Druhy plodin</cz>
+        </text>
+        <text name="BM_MapMode_S2">
+            <en>Growth</en>
+            <de>Wachstum</de>
+            <fr>Croissance</fr>
+            <cz>Růst</cz>
+        </text>
+        <text name="BM_MapMode_S3">
+            <en>Soil composition</en>
+            <de>Bodenbeschaffenheit</de>
+            <fr>Composition de la terre</fr>
+            <cz>Složení půdy</cz>
+        </text>
+
+        <text name="input_BM_TOGGLE_HELP">
+            <en>Minimap: Help (on/off)</en>
+            <de>Minimap: Hilfe (Ein/Aus)</de>
+            <fr>Minicarte: Aide (On/Off)</fr>
+            <cz>Minimapa: Nápověda(Zap/Vyp)</cz>
+        </text>
+        <text name="input_BM_RELOAD">
+            <en>Minimap: Manual reload</en>
+            <de>Minimap: Manuelles Nachladen</de>
+            <fr>Minicarte: Rechargement manuel</fr>
+			<cz>Minimapa: Manuální obnovení</cz>
         </text>
         <text name="input_BM_NEXT">
-            <en>Better Minimap: Show next states</en>
-            <de>Bessere Minimap: Zeige nächste Bundesländer</de>
-            <fr>Meilleure Minicarte: Afficher les prochains états</fr>
+            <en>Minimap: Next mode</en>
+            <de>Minimap: Ein anderer Modus</de>
+            <fr>Minicarte: Un autre mode</fr>
+			<cz>Minimapa: Následující režim</cz>
         </text>
         <text name="input_BM_PREV">
-            <en>Better Minimap: Show prev states</en>
-            <de>Bessere Minimap: Zeige vorherige Bundesländer</de>
-            <fr>Meilleure Minicarte: Afficher les états précédents</fr>
+            <en>Minimap: Prev mode</en>
+            <de>Minimap: Vorheriger Modus</de>
+            <fr>Minicarte: Mode précédent</fr>
+			<cz>Minimapa: Předchozí režim</cz>
         </text>
-        <text name="input_BM_MORE">
-            <en>Better Minimap: Show more statistics</en>
-            <de>Bessere Minimap: Zeige mehr Statistiken</de>
-            <fr>Meilleure Minicarte: Afficher plus de statistiques</fr>
+        <text name="input_BM_CHANGE_SIZE">
+            <en>Minimap: Resize</en>
+            <de>Minimap: Größe ändern</de>
+            <fr>Minicarte: Redimensionner</fr>
+            <cz>Minimapa: Změnit velikost</cz>
         </text>
-        <text name="input_BM_MAP_ZOOM_IN">
-            <en>Better Minimap: Map zoom in</en>
-            <de>Bessere Minimap: Karte vergrößern</de>
-            <fr>Meilleure Minicarte: Carte zoom avant</fr>
+        <text name="input_BM_TOGGLE_ALPHA">
+            <en>Minimap: Transparency</en>
+            <de>Minimap: Transparenz</de>
+            <fr>Minicarte: Transparence</fr>
+            <cz>Minimapa: Průhlednost</cz>
         </text>
-        <text name="input_BM_MAP_ZOOM_OUT">
-            <en>Better Minimap: Map zoom out</en>
-            <de>Bessere Minimap: Karte verkleinern</de>
-            <fr>Meilleure Minicarte: Carte zoom arrière</fr>
+        <text name="input_BM_ZOOM_IN">
+            <en>Minimap: Zoom in</en>
+            <de>Minimap: Heranzoomen</de>
+            <fr>Minicarte: Zoom avant</fr>
+			<cz>Minimapa: Přiblížení</cz>
+        </text>
+        <text name="input_BM_ZOOM_OUT">
+            <en>Minimap: Zoom out</en>
+            <de>Minimap: Verkleinern</de>
+            <fr>Minicarte: Zoom arrière</fr>
+			<cz>Minimapa: Oddálení</cz>
         </text>
     </l10n>
 
     <inputBindings>
+        <input name="BM_TOGGLE_HELP" category="ONFOOT VEHICLE" key1="KEY_lshift KEY_9" key2="" button="" device="0"
+               mouse=""/>
         <input name="BM_RELOAD" category="ONFOOT VEHICLE" key1="KEY_backslash" key2="" button="" device="0"
                mouse=""/>
         <input name="BM_PREV" category="ONFOOT VEHICLE" key1="KEY_leftbracket" key2="" button="" device="0"
                mouse=""/>
         <input name="BM_NEXT" category="ONFOOT VEHICLE" key1="KEY_rightbracket" key2="" button="" device="0"
                mouse=""/>
-        <input name="BM_MORE" category="ONFOOT VEHICLE" key1="KEY_9" key2="" button="" device="0" mouse=""/>
-        <input name="BM_MAP_ZOOM_IN" category="ONFOOT VEHICLE" key1="KEY_lalt KEY_KP_plus" key2="" button=""
+		<input name="BM_CHANGE_SIZE" category="ONFOOT VEHICLE" key1="KEY_lalt KEY_9" key2="" button="" device="0"
+               mouse=""/>
+        <input name="BM_TOGGLE_ALPHA" category="ONFOOT VEHICLE" key1="KEY_lshift KEY_lalt KEY_9" key2="" button="" device="0"
+               mouse=""/>
+        <input name="BM_ZOOM_IN" category="ONFOOT VEHICLE" key1="KEY_lalt KEY_KP_plus" key2="" button=""
                device="0" mouse=""/>
-        <input name="BM_MAP_ZOOM_OUT" category="ONFOOT VEHICLE" key1="KEY_lalt KEY_KP_minus" key2="" button=""
+        <input name="BM_ZOOM_OUT" category="ONFOOT VEHICLE" key1="KEY_lalt KEY_KP_minus" key2="" button=""
                device="0" mouse=""/>
     </inputBindings>
 
