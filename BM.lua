@@ -183,7 +183,7 @@ function BM:draw()
 
         if self.showState ~= 0 and getIsFoliageStateOverlayReady(foliageOverlay) then
             setOverlayUVs(foliageOverlay, unpack(ingameMap.mapUVs));
-            renderOverlay(foliageOverlay, BM.screenOffsetX, BM.screenOffsetX, self.mapWidth, self.mapHeight);
+            renderOverlay(foliageOverlay, BM.screenOffsetX, BM.screenOffsetY, self.mapWidth, self.mapHeight);
         end ;
 
         self:renderMapMode();
