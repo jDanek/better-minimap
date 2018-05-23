@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="39">
     <version>1.0.0.0</version>
     <author>jDanek</author>
@@ -7,7 +7,7 @@
         <de>Bessere Minimap</de>
         <fr>Meilleure Minicarte</fr>
         <cz>Lepší Minimapa</cz>
-		<pl>Ulepszona minimapa</pl>
+        <pl>Ulepszona minimapa</pl>
     </title>
 
     <description>
@@ -59,7 +59,7 @@ Funkce:
 - Přepínání průhlednosti
 - Přiblížení a oddálení minimapy
 		]]></cz>
-		<pl><![CDATA[
+        <pl><![CDATA[
 Ulepszona minimapa, która zastępuje oryginalną w grze minimapę. Dodaje możliwość przełączania trybów wyświetlania (rodzaje roślin, wzrost roślin i zagęszczenie gleby) bezpośrednio na minimapie. Stany te są automatycznie odświeżanie po 60 sekundach od zmiany trybu lub rozmiaru minimapy.
 
 Funkcje:
@@ -82,35 +82,35 @@ Funkcje:
             <de>Anzeige:</de>
             <fr>Affichage:</fr>
             <cz>Zobrazení:</cz>
-			<pl>Obecnie:</pl>
+            <pl>Obecnie:</pl>
         </text>
         <text name="BM_MapMode_S0">
             <en>Normal</en>
             <de>Normal</de>
             <fr>Normal</fr>
             <cz>Normální</cz>
-			<pl>Normalna</pl>
+            <pl>Normalna</pl>
         </text>
         <text name="BM_MapMode_S1">
             <en>Fruit types</en>
             <de>Feldfrüchte</de>
             <fr>Types de cultures</fr>
             <cz>Druhy plodin</cz>
-			<pl>Rodzaje upraw</pl>
+            <pl>Rodzaje upraw</pl>
         </text>
         <text name="BM_MapMode_S2">
             <en>Growth</en>
             <de>Wachstum</de>
             <fr>Croissance</fr>
             <cz>Růst</cz>
-			<pl>Wzrost upraw</pl>
+            <pl>Wzrost upraw</pl>
         </text>
         <text name="BM_MapMode_S3">
             <en>Soil composition</en>
             <de>Bodenbeschaffenheit</de>
             <fr>Composition de la terre</fr>
             <cz>Složení půdy</cz>
-			<pl>Zagęszczenie gleby</pl>
+            <pl>Zagęszczenie gleby</pl>
         </text>
 
         <text name="input_BM_TOGGLE_HELP">
@@ -118,56 +118,56 @@ Funkcje:
             <de>Minimap: Hilfe (Ein/Aus)</de>
             <fr>Minicarte: Aide (On/Off)</fr>
             <cz>Minimapa: Nápověda(Zap/Vyp)</cz>
-			<pl>Minimapa: Pokaż/Ukryj pomoc</pl>
+            <pl>Minimapa: Pokaż/Ukryj pomoc</pl>
         </text>
         <text name="input_BM_RELOAD">
             <en>Minimap: Manual reload</en>
             <de>Minimap: Manuelles Nachladen</de>
             <fr>Minicarte: Rechargement manuel</fr>
             <cz>Minimapa: Manuální obnovení</cz>
-			<pl>Minimapa: Odśwież ręcznie</pl>
+            <pl>Minimapa: Odśwież ręcznie</pl>
         </text>
         <text name="input_BM_NEXT">
             <en>Minimap: Next mode</en>
             <de>Minimap: Ein anderer Modus</de>
             <fr>Minicarte: Un autre mode</fr>
             <cz>Minimapa: Následující režim</cz>
-			<pl>Minimapa: Następny tryb</pl>
+            <pl>Minimapa: Następny tryb</pl>
         </text>
         <text name="input_BM_PREV">
             <en>Minimap: Prev mode</en>
             <de>Minimap: Vorheriger Modus</de>
             <fr>Minicarte: Mode précédent</fr>
             <cz>Minimapa: Předchozí režim</cz>
-			<pl>Minimapa: Poprzedni tryb</pl>
+            <pl>Minimapa: Poprzedni tryb</pl>
         </text>
         <text name="input_BM_CHANGE_SIZE">
             <en>Minimap: Resize</en>
             <de>Minimap: Größe ändern</de>
             <fr>Minicarte: Redimensionner</fr>
             <cz>Minimapa: Změnit velikost</cz>
-			<pl>Minimapa: Zmiana rozmiaru</pl>
+            <pl>Minimapa: Zmiana rozmiaru</pl>
         </text>
         <text name="input_BM_TOGGLE_ALPHA">
             <en>Minimap: Transparency</en>
             <de>Minimap: Transparenz</de>
             <fr>Minicarte: Transparence</fr>
             <cz>Minimapa: Průhlednost</cz>
-			<pl>Minimapa: Przezroczystość</pl>
+            <pl>Minimapa: Przezroczystość</pl>
         </text>
         <text name="input_BM_ZOOM_IN">
             <en>Minimap: Zoom in</en>
             <de>Minimap: Heranzoomen</de>
             <fr>Minicarte: Zoom avant</fr>
             <cz>Minimapa: Přiblížení</cz>
-			<pl>Minimapa: Przybliż</pl>
+            <pl>Minimapa: Przybliż</pl>
         </text>
         <text name="input_BM_ZOOM_OUT">
             <en>Minimap: Zoom out</en>
             <de>Minimap: Verkleinern</de>
             <fr>Minicarte: Zoom arrière</fr>
             <cz>Minimapa: Oddálení</cz>
-			<pl>Minimapa: Oddal</pl>
+            <pl>Minimapa: Oddal</pl>
         </text>
     </l10n>
 
