@@ -2,11 +2,11 @@
 <l10n>
 	<translationContributors>Ziuta</translationContributors>
 	<texts>
-		<text name="MB_MapMode" text="Obecnie:" />
-		<text name="MB_MapMode_S0" text="Normalna" />
-		<text name="MB_MapMode_S1" text="Rodzaje upraw" />
-		<text name="MB_MapMode_S2" text="Wzrost upraw" />
-		<text name="MB_MapMode_S3" text="Zagęszczenie gleby" />
+		<text name="BM_MapMode" text="Obecnie:" />
+		<text name="BM_MapMode_S0" text="Normalna" />
+		<text name="BM_MapMode_S1" text="Rodzaje upraw" />
+		<text name="BM_MapMode_S2" text="Wzrost upraw" />
+		<text name="BM_MapMode_S3" text="Zagęszczenie gleby" />
 
 		<text name="input_BM_TOGGLE_HELP" text="Minimapa: Pokaż/Ukryj pomoc"/>
 		<text name="input_BM_RELOAD" text="Minimapa: Odśwież ręcznie"/>

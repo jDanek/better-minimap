@@ -2,11 +2,11 @@
 <l10n>
     <translationContributors>jDanek</translationContributors>
     <texts>
-        <text name="MB_MapMode" text="Affichage:"/>
-        <text name="MB_MapMode_S0" text="Normal"/>
-        <text name="MB_MapMode_S1" text="Types de cultures"/>
-        <text name="MB_MapMode_S2" text="Croissance"/>
-        <text name="MB_MapMode_S3" text="Composition de la terre"/>
+        <text name="BM_MapMode" text="Affichage:"/>
+        <text name="BM_MapMode_S0" text="Normal"/>
+        <text name="BM_MapMode_S1" text="Types de cultures"/>
+        <text name="BM_MapMode_S2" text="Croissance"/>
+        <text name="BM_MapMode_S3" text="Composition de la terre"/>
 
         <text name="input_BM_TOGGLE_HELP" text="Minicarte: Aide (On/Off)"/>
         <text name="input_BM_RELOAD" text="Minicarte: Rechargement manuel"/>

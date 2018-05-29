@@ -2,11 +2,11 @@
 <l10n>
     <translationContributors>jDanek</translationContributors>
     <texts>
-        <text name="MB_MapMode" text="Zobrazení:"/>
-        <text name="MB_MapMode_S0" text="Normální"/>
-        <text name="MB_MapMode_S1" text="Druhy plodin"/>
-        <text name="MB_MapMode_S2" text="Růst"/>
-        <text name="MB_MapMode_S3" text="Složení půdy"/>
+        <text name="BM_MapMode" text="Zobrazení:"/>
+        <text name="BM_MapMode_S0" text="Normální"/>
+        <text name="BM_MapMode_S1" text="Druhy plodin"/>
+        <text name="BM_MapMode_S2" text="Růst"/>
+        <text name="BM_MapMode_S3" text="Složení půdy"/>
 
         <text name="input_BM_TOGGLE_HELP" text="Minimapa: Nápověda(Zap/Vyp)"/>
         <text name="input_BM_RELOAD" text="Minimapa: Manuální obnovení"/>

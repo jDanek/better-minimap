@@ -2,11 +2,11 @@
 <l10n>
     <translationContributors>jDanek</translationContributors>
     <texts>
-        <text name="MB_MapMode" text="Anzeige:"/>
-        <text name="MB_MapMode_S0" text="Normal"/>
-        <text name="MB_MapMode_S1" text="Feldfrüchte"/>
-        <text name="MB_MapMode_S2" text="Wachstum"/>
-        <text name="MB_MapMode_S3" text="Bodenbeschaffenheit"/>
+        <text name="BM_MapMode" text="Anzeige:"/>
+        <text name="BM_MapMode_S0" text="Normal"/>
+        <text name="BM_MapMode_S1" text="Feldfrüchte"/>
+        <text name="BM_MapMode_S2" text="Wachstum"/>
+        <text name="BM_MapMode_S3" text="Bodenbeschaffenheit"/>
 
         <text name="input_BM_TOGGLE_HELP" text="Minimap: Hilfe (Ein/Aus)"/>
         <text name="input_BM_RELOAD" text="Minimap: Manuelles Nachladen"/>
