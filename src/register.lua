@@ -3,13 +3,22 @@ BM.moddir = g_currentModDirectory;
 BM.modName = g_currentModName;
 BM.mapEvents = {};
 
-BM.refreshFreq = 60 * 1000; -- 60 x 1sec
+-- refresh frequence (in sec)
+BM.refreshFreq = {}
+BM.refreshFreq[1] = 15;
+BM.refreshFreq[2] = 30;
+BM.refreshFreq[3] = 45;
+BM.refreshFreq[4] = 60;
+BM.refreshFreqCounter = 4;
+
 
 -- minimap sizes {width, height}
 BM.sizeDefinition = {};
 BM.sizeDefinition[1] = { 456, 350 }; -- normal size
 BM.sizeDefinition[2] = { 800, 350 }; -- wide size
 BM.sizeDefinition[3] = { 800, 600 }; -- larger size
+
+source(Utils.getFilename("src/gui/ConfigGui.lua", BM.moddir));
 
 function BM:init(width)
     self.overlayPosX = 0.003;
@@ -40,7 +49,12 @@ function BM:loadMap(name)
     self.visWidth = 0.3;
 
     self.selectedSizeDefinition = 1;
+    self.selectedRefreshFreq = 4;
     self.toggleAlpha = false;
+
+    -- config gui
+    self.ConfigGui = ConfigGui:new()
+    g_gui:loadGui(Utils.getFilename("src/gui/ConfigGui.xml", BM.moddir), "ConfigGui", self.ConfigGui)
 
     -- counting fruits (need for right switching map mode)
     self.numberOfFruits = 0;
@@ -75,7 +89,7 @@ function BM:update(dt)
         self.needUpdateFruitOverlay = true;
     end ;
 
-    if self.timer < self.refreshFreq then
+    if self.timer < (self.refreshFreq[self.selectedRefreshFreq] * 1000) then
         self.timer = self.timer + dt;
     else
         self.needUpdateFruitOverlay = true;
@@ -89,6 +103,14 @@ function BM:update(dt)
         end ;
 
         self:renderModHelp();
+
+        if (InputBinding.hasEvent(InputBinding.BM_TOGGLE_GUI)) then
+            if self.ConfigGui.isOpen then
+                self.ConfigGui:onClickBack()
+            elseif g_gui.currentGui == nil then
+                g_gui:showGui("ConfigGui")
+            end
+        end ;
 
         if (InputBinding.hasEvent(InputBinding.BM_RELOAD)) then
             self.needUpdateFruitOverlay = true;
@@ -228,7 +250,7 @@ function BM:renderMapMode()
     setTextBold(false);
     setTextColor(1, 1, 1, 1);
     -- time to refresh
-    renderText(self.screenOffsetX + 0.003, self.screenOffsetY + 0.007, 0.013, "[" .. math.ceil((self.refreshFreq / 1000) - (self.timer / 1000)) .. "]");
+    renderText(self.screenOffsetX + 0.003, self.screenOffsetY + 0.007, 0.013, "[" .. math.ceil((self.refreshFreq[self.selectedRefreshFreq]) - (self.timer / 1000)) .. "]");
     -- map mode info (more fruits = more pages)
     local modeInfo = g_i18n:getText("BM_MapMode_S" .. self.showState);
     if (self.numberOfFruitPages > 1) then
@@ -259,6 +281,22 @@ function BM:generateFruitOverlay()
     self.timer = 0;
 
 end;
+
+--[[
+Methods for integration config
+]]
+
+function BM:forceMapUpdate()
+    self.timer=0;
+end;
+
+function BM:changeFreq(state)
+    self.selectedRefreshFreq = state;
+end;
+
+function BM:setAlpha(state)
+    self.toggleAlpha = state;
+end
 
 BM:init();
 addModEventListener(BM);
