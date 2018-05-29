@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<translationContributors>Ziuta</translationContributors>
+	<texts>
+		<text name="MB_MapMode" text="Obecnie:" />
+		<text name="MB_MapMode_S0" text="Normalna" />
+		<text name="MB_MapMode_S1" text="Rodzaje upraw" />
+		<text name="MB_MapMode_S2" text="Wzrost upraw" />
+		<text name="MB_MapMode_S3" text="Zagęszczenie gleby" />
+
+		<text name="input_BM_TOGGLE_HELP" text="Minimapa: Pokaż/Ukryj pomoc"/>
+		<text name="input_BM_RELOAD" text="Minimapa: Odśwież ręcznie"/>
+		<text name="input_BM_NEXT" text="Minimapa: Następny tryb"/>
+		<text name="input_BM_PREV" text="Minimapa: Poprzedni tryb"/>
+		<text name="input_BM_CHANGE_SIZE" text="Minimapa: Zmiana rozmiaru"/>
+		<text name="input_BM_TOGGLE_ALPHA" text="Minimapa: Przezroczystość"/>
+		<text name="input_BM_ZOOM_IN" text="Minimapa: Przybliż"/>
+		<text name="input_BM_ZOOM_OUT" text="Minimapa: Oddal"/>
+	</texts>
+</l10n>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>jDanek</translationContributors>
+    <texts>
+        <text name="MB_MapMode" text="Affichage:"/>
+        <text name="MB_MapMode_S0" text="Normal"/>
+        <text name="MB_MapMode_S1" text="Types de cultures"/>
+        <text name="MB_MapMode_S2" text="Croissance"/>
+        <text name="MB_MapMode_S3" text="Composition de la terre"/>
+
+        <text name="input_BM_TOGGLE_HELP" text="Minicarte: Aide (On/Off)"/>
+        <text name="input_BM_RELOAD" text="Minicarte: Rechargement manuel"/>
+        <text name="input_BM_NEXT" text="Minicarte: Un autre mode"/>
+        <text name="input_BM_PREV" text="Minicarte: Mode précédent"/>
+        <text name="input_BM_CHANGE_SIZE" text="Minicarte: Redimensionner"/>
+        <text name="input_BM_TOGGLE_ALPHA" text="Minicarte: Transparence"/>
+        <text name="input_BM_ZOOM_IN" text="Minicarte: Zoom avant"/>
+        <text name="input_BM_ZOOM_OUT" text="Minicarte: Zoom arrière"/>
+    </texts>
+</l10n>

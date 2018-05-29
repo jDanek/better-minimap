@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>jDanek</translationContributors>
+    <texts>
+        <text name="MB_MapMode" text="Display:"/>
+        <text name="MB_MapMode_S0" text="Normal"/>
+        <text name="MB_MapMode_S1" text="Fruit types"/>
+        <text name="MB_MapMode_S2" text="Growth"/>
+        <text name="MB_MapMode_S3" text="Soil composition"/>
+
+        <text name="input_BM_TOGGLE_HELP" text="Minimap: Help (on/off)"/>
+        <text name="input_BM_RELOAD" text="Minimap: Manual reload"/>
+        <text name="input_BM_NEXT" text="Minimap: Next mode"/>
+        <text name="input_BM_PREV" text="Minimap: Prev mode"/>
+        <text name="input_BM_CHANGE_SIZE" text="Minimap: Resize"/>
+        <text name="input_BM_TOGGLE_ALPHA" text="Minimap: Transparency"/>
+        <text name="input_BM_ZOOM_IN" text="Minimap: Zoom in"/>
+        <text name="input_BM_ZOOM_OUT" text="Minimap: Zoom out"/>
+    </texts>
+</l10n>

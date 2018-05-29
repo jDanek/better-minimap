@@ -99,102 +99,7 @@ V1.0.0.1
     </description>
 
     <multiplayer supported="true"/>
-    <iconFilename>store.dds</iconFilename>
-
-    <l10n>
-        <text name="BM_MapMode">
-            <en>Display:</en>
-            <de>Anzeige:</de>
-            <fr>Affichage:</fr>
-            <cz>Zobrazení:</cz>
-            <pl>Obecnie:</pl>
-        </text>
-        <text name="BM_MapMode_S0">
-            <en>Normal</en>
-            <de>Normal</de>
-            <fr>Normal</fr>
-            <cz>Normální</cz>
-            <pl>Normalna</pl>
-        </text>
-        <text name="BM_MapMode_S1">
-            <en>Fruit types</en>
-            <de>Feldfrüchte</de>
-            <fr>Types de cultures</fr>
-            <cz>Druhy plodin</cz>
-            <pl>Rodzaje upraw</pl>
-        </text>
-        <text name="BM_MapMode_S2">
-            <en>Growth</en>
-            <de>Wachstum</de>
-            <fr>Croissance</fr>
-            <cz>Růst</cz>
-            <pl>Wzrost upraw</pl>
-        </text>
-        <text name="BM_MapMode_S3">
-            <en>Soil composition</en>
-            <de>Bodenbeschaffenheit</de>
-            <fr>Composition de la terre</fr>
-            <cz>Složení půdy</cz>
-            <pl>Zagęszczenie gleby</pl>
-        </text>
-
-        <text name="input_BM_TOGGLE_HELP">
-            <en>Minimap: Help (on/off)</en>
-            <de>Minimap: Hilfe (Ein/Aus)</de>
-            <fr>Minicarte: Aide (On/Off)</fr>
-            <cz>Minimapa: Nápověda(Zap/Vyp)</cz>
-            <pl>Minimapa: Pokaż/Ukryj pomoc</pl>
-        </text>
-        <text name="input_BM_RELOAD">
-            <en>Minimap: Manual reload</en>
-            <de>Minimap: Manuelles Nachladen</de>
-            <fr>Minicarte: Rechargement manuel</fr>
-            <cz>Minimapa: Manuální obnovení</cz>
-            <pl>Minimapa: Odśwież ręcznie</pl>
-        </text>
-        <text name="input_BM_NEXT">
-            <en>Minimap: Next mode</en>
-            <de>Minimap: Ein anderer Modus</de>
-            <fr>Minicarte: Un autre mode</fr>
-            <cz>Minimapa: Následující režim</cz>
-            <pl>Minimapa: Następny tryb</pl>
-        </text>
-        <text name="input_BM_PREV">
-            <en>Minimap: Prev mode</en>
-            <de>Minimap: Vorheriger Modus</de>
-            <fr>Minicarte: Mode précédent</fr>
-            <cz>Minimapa: Předchozí režim</cz>
-            <pl>Minimapa: Poprzedni tryb</pl>
-        </text>
-        <text name="input_BM_CHANGE_SIZE">
-            <en>Minimap: Resize</en>
-            <de>Minimap: Größe ändern</de>
-            <fr>Minicarte: Redimensionner</fr>
-            <cz>Minimapa: Změnit velikost</cz>
-            <pl>Minimapa: Zmiana rozmiaru</pl>
-        </text>
-        <text name="input_BM_TOGGLE_ALPHA">
-            <en>Minimap: Transparency</en>
-            <de>Minimap: Transparenz</de>
-            <fr>Minicarte: Transparence</fr>
-            <cz>Minimapa: Průhlednost</cz>
-            <pl>Minimapa: Przezroczystość</pl>
-        </text>
-        <text name="input_BM_ZOOM_IN">
-            <en>Minimap: Zoom in</en>
-            <de>Minimap: Heranzoomen</de>
-            <fr>Minicarte: Zoom avant</fr>
-            <cz>Minimapa: Přiblížení</cz>
-            <pl>Minimapa: Przybliż</pl>
-        </text>
-        <text name="input_BM_ZOOM_OUT">
-            <en>Minimap: Zoom out</en>
-            <de>Minimap: Verkleinern</de>
-            <fr>Minicarte: Zoom arrière</fr>
-            <cz>Minimapa: Oddálení</cz>
-            <pl>Minimapa: Oddal</pl>
-        </text>
-    </l10n>
+    <iconFilename>icon.dds</iconFilename>
 
     <inputBindings>
         <input name="BM_TOGGLE_HELP" category="ONFOOT VEHICLE" key1="KEY_lshift KEY_9" key2="" button="" device="0"
@@ -216,7 +121,9 @@ V1.0.0.1
     </inputBindings>
 
     <extraSourceFiles>
-        <sourceFile filename="BM.lua"/>
+        <sourceFile filename="src/register.lua"/>
     </extraSourceFiles>
+
+    <l10n filenamePrefix="translations/translation"/>
 
 </modDesc>

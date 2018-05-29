@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>jDanek</translationContributors>
+    <texts>
+        <text name="MB_MapMode" text="Zobrazení:"/>
+        <text name="MB_MapMode_S0" text="Normální"/>
+        <text name="MB_MapMode_S1" text="Druhy plodin"/>
+        <text name="MB_MapMode_S2" text="Růst"/>
+        <text name="MB_MapMode_S3" text="Složení půdy"/>
+
+        <text name="input_BM_TOGGLE_HELP" text="Minimapa: Nápověda(Zap/Vyp)"/>
+        <text name="input_BM_RELOAD" text="Minimapa: Manuální obnovení"/>
+        <text name="input_BM_NEXT" text="Minimapa: Následující režim"/>
+        <text name="input_BM_PREV" text="Minimapa: Předchozí režim"/>
+        <text name="input_BM_CHANGE_SIZE" text="Minimapa: Změnit velikost"/>
+        <text name="input_BM_TOGGLE_ALPHA" text="Minimapa: Průhlednost"/>
+        <text name="input_BM_ZOOM_IN" text="Minimapa: Přiblíení"/>
+        <text name="input_BM_ZOOM_OUT" text="Minimapa: Oddálení"/>
+    </texts>
+</l10n>
