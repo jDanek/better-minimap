@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="39">
-    <version>1.0.0.0</version>
+    <version>1.0.0.1</version>
     <author>jDanek</author>
     <title>
         <en>Better Minimap</en>
@@ -22,6 +22,11 @@ Function:
 - Remembers the selected size during play
 - Switching transparency
 - Zoom in and out of the minimap
+
+Changelog:
+
+V1.0.0.1
++ Added Polish translation
 ]]></en>
         <de><![CDATA[
 Eine bessere Minikarte, die die ursprüngliche Minikarte im Spiel ersetzt. Fügt die Fähigkeit hinzu, Bildgebungsmodi (Pflanzen, Pflanzenwachstum und Boden) direkt in Minikarte zu wechseln. Diese Status werden automatisch nach 60 Sekunden wiederhergestellt, indem Sie den Modus ändern oder die Größe der Minikarte ändern.
@@ -34,6 +39,11 @@ Eigenschaften:
 - Erinnert sich an die gewählte Größe während der Wiedergabe
 - Transparenz wechseln
 - Vergrößern und verkleinern der Minikarte
+
+Änderungsliste:
+
+V1.0.0.1
++ Hinzugefügt polnische Übersetzung
 ]]></de>
         <fr><![CDATA[
 Une meilleure minicarte qui remplace la minicarte originale dans le jeu. Ajoute la possibilité de changer de mode d'imagerie (plantes, croissance des plantes et sol) directement en minicarte. Ces états sont automatiquement restaurés après 60 secondes en changeant le mode ou en redimensionnant la minicarte.
@@ -46,6 +56,11 @@ Caractéristiques:
 - Se souvient de la taille sélectionnée pendant la lecture
 - Transparence de commutation
 - Zoom avant et arrière sur la minicarte
+
+Changelog:
+
+V1.0.0.1
++ Ajout de traduction polonaise
 ]]></fr>
         <cz><![CDATA[
 Lepší minimapa, který nahrazuje původní minimapu ve hře. Přidá možnost přepínat zobrazovací režimy (rostliny, růst rostlin a půda) přímo v minimapě. Tyto stavy se automaticky obnoví po 60 sekundách, změnou režimu nebo změnou velikosti minimapu.
@@ -58,7 +73,12 @@ Funkce:
 - Pamatuje si zvolenou velikost během hry
 - Přepínání průhlednosti
 - Přiblížení a oddálení minimapy
-		]]></cz>
+
+Změny:
+
+V1.0.0.1
++ Přidán polský překlad
+]]></cz>
         <pl><![CDATA[
 Ulepszona minimapa, która zastępuje oryginalną w grze minimapę. Dodaje możliwość przełączania trybów wyświetlania (rodzaje roślin, wzrost roślin i zagęszczenie gleby) bezpośrednio na minimapie. Stany te są automatycznie odświeżanie po 60 sekundach od zmiany trybu lub rozmiaru minimapy.
 
@@ -70,6 +90,11 @@ Funkcje:
 - Zapamiętuje wybrany rozmiar podczas gry
 - Zmiana przezroczystości
 - Przybliżanie i oddalanie minimapy
+
+Dziennik zmian:
+
+V1.0.0.1
++ Dodano polskie tłumaczenie
 ]]></pl>
     </description>
 
