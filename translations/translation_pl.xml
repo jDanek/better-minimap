@@ -2,28 +2,28 @@
 <l10n>
     <translationContributors>Ziuta</translationContributors>
     <texts>
-        <text name="BM_MapMode" text="Obecnie:"/>
-        <text name="BM_MapMode_S0" text="Normalna"/>
+        <text name="BM_MapMode" text="Tryb wyświetlania:"/>
+        <text name="BM_MapMode_S0" text="Nawigacja"/>
         <text name="BM_MapMode_S1" text="Rodzaje upraw"/>
         <text name="BM_MapMode_S2" text="Wzrost upraw"/>
         <text name="BM_MapMode_S3" text="Zagęszczenie gleby"/>
 
         <text name="gui_BM_TITLE" text="Ulepszona minimapa - Ustawienia"/>
-        <text name="gui_BM_TOGGLE_VISIBLE" text="Obecnie"/>
-        <text name="gui_BM_TOGGLE_VISIBLE_TOOLTIP" text="Włącz / wyłącz widok minimapy"/>
-        <text name="gui_BM_TOOGLE_HELP" text="Pomoc"/>
-        <text name="gui_BM_TOGGLE_HELP_TOOLTIP" text="Włączanie / wyłączanie głównego klawisza pomocy"/>
-        <text name="gui_BM_REFRESHFREQ" text="Przywróć"/>
-        <text name="gui_BM_REFRESHFREQ_TOOLTIP" text="Zmiana czasu potrzebnego do odzyskania stanów"/>
+        <text name="gui_BM_TOGGLE_VISIBLE" text="Tryb wyświetlania"/>
+        <text name="gui_BM_TOGGLE_VISIBLE_TOOLTIP" text="Pokaż/Ukryj minimapę"/>
+        <text name="gui_BM_TOGGLE_HELP" text="Przyciski funkcyjne"/>
+        <text name="gui_BM_TOGGLE_HELP_TOOLTIP" text="Pokaż/Ukryj przyciski w oknie pomocy"/>
+        <text name="gui_BM_REFRESHFREQ" text="Odświeżanie"/>
+        <text name="gui_BM_REFRESHFREQ_TOOLTIP" text="Czas do następnego odświeżenia stanów"/>
         <text name="gui_BM_SIZEMODE" text="Rozmiar"/>
-        <text name="gui_BM_SIZEMODE_TOOLTIP" text="Zmień rozmiar podstawowej minimapy"/>
-        <text name="gui_BM_MAPSIZE_N" text="Normalny"/>
-        <text name="gui_BM_MAPSIZE_W" text="Szeroki"/>
-        <text name="gui_BM_MAPSIZE_L" text="Większy"/>
-        <text name="gui_BM_TRANSPARENT" text="Przejrzystość"/>
-        <text name="gui_BM_TRANSPARENT_TOOLTIP" text="Włącz / wyłącz przezroczystość"/>
-        <text name="gui_BM_TRANSMODE" text="Przejrzystość poziomu"/>
-        <text name="gui_BM_TRANSMODE_TOOLTIP" text="Zmiana poziomu przezroczystości (mniejsza liczba = większa przezroczystość)"/>
+        <text name="gui_BM_SIZEMODE_TOOLTIP" text="Zmienia rozmiar podstawowej minimapy"/>
+        <text name="gui_BM_MAPSIZE_N" text="Domyślny"/>
+        <text name="gui_BM_MAPSIZE_W" text="Szeroka"/>
+        <text name="gui_BM_MAPSIZE_L" text="Duża"/>
+        <text name="gui_BM_TRANSPARENT" text="Przezroczystość"/>
+        <text name="gui_BM_TRANSPARENT_TOOLTIP" text="Włącza/Wyłącza przezroczystość minimapy"/>
+        <text name="gui_BM_TRANSMODE" text="Stopień przezroczystości"/>
+        <text name="gui_BM_TRANSMODE_TOOLTIP" text="Im mniejsza liczba tym minimapa jest bardziej przezroczysta"/>
 
         <text name="input_BM_SHOW_CONFIG_GUI" text="Minimapa: Otwórz ustawienia"/>
         <text name="input_BM_TOGGLE_HELP" text="Minimapa: Pokaż/Ukryj pomoc"/>
