@@ -39,6 +39,7 @@ function ConfigGui:onClickOk()
     BM.settings.transparent = self.isTransparent:getIsChecked();
     BM.settings.transMode = self.transMode:getState();
 
+    BM.settings.mapUpdate = true;
     self:onClickBack()
 end
 

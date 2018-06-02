@@ -28,6 +28,7 @@ BM.settings.mapUpdate = false;
 BM.settings.visible = false;
 BM.settings.help_min = true;
 BM.settings.help_full = false;
+BM.settings.fullscreen = false;
 BM.settings.frequency = 4;
 BM.settings.sizeMode = 1;
 BM.settings.transparent = false;
@@ -153,13 +154,6 @@ function BM:update(dt)
         end ;
 
         if (not self.settings.fullscreen) then
-            if (InputBinding.hasEvent(InputBinding.BM_CHANGE_SIZE)) then
-                self.settings.sizeMode = self.settings.sizeMode + 1;
-                if (self.settings.sizeMode > 3) then
-                    self.settings.sizeMode = 1
-                end ;
-                self.settings.mapUpdate = true;
-            end ;
             if (InputBinding.isPressed(InputBinding.BM_ZOOM_IN)) then
                 ingameMap:zoom(-self.zoomFactor * dt);
                 self.visWidth = ingameMap.mapVisWidthMin;
@@ -170,7 +164,7 @@ function BM:update(dt)
             end ;
         end ;
 
-        if (not self.settings.mapUpdate) then
+        if (self.settings.mapUpdate) then
             self:renderSelectedMinimap();
         end ;
 
