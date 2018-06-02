@@ -11,7 +11,7 @@
         <text name="gui_BM_TITLE" text="Better Minimap - Settings"/>
         <text name="gui_BM_TOGGLE_VISIBLE" text="Display"/>
         <text name="gui_BM_TOGGLE_VISIBLE_TOOLTIP" text="Turn on / off the minimap view "/>
-        <text name="gui_BM_TOOGLE_HELP" text="Help"/>
+        <text name="gui_BM_TOGGLE_HELP" text="Help"/>
         <text name="gui_BM_TOGGLE_HELP_TOOLTIP" text="Turn on / off the main help key "/>
         <text name="gui_BM_REFRESHFREQ" text="Refresh"/>
         <text name="gui_BM_REFRESHFREQ_TOOLTIP" text="Changing the time needed to retrieve states"/>

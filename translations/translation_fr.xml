@@ -11,7 +11,7 @@
         <text name="gui_BM_TITLE" text="Meilleure Minicarte - Paramètres"/>
         <text name="gui_BM_TOGGLE_VISIBLE" text="Affichage"/>
         <text name="gui_BM_TOGGLE_VISIBLE_TOOLTIP" text="Activer / désactiver la vue de minicarte"/>
-        <text name="gui_BM_TOOGLE_HELP" text="Aide"/>
+        <text name="gui_BM_TOGGLE_HELP" text="Aide"/>
         <text name="gui_BM_TOGGLE_HELP_TOOLTIP" text="Activer / désactiver la touche d'aide principale"/>
         <text name="gui_BM_REFRESHFREQ" text="Restaurer"/>
         <text name="gui_BM_REFRESHFREQ_TOOLTIP" text="Modifier le temps nécessaire pour récupérer les états"/>
