@@ -13,7 +13,12 @@ end
 function ConfigGui:onOpen()
     ConfigGui:superClass().onOpen(self);
 
-    self:setSelectedFreq(BM.selectedRefreshFreq);
+    self.isVisible:setIsChecked(BM.settings.visible);
+    self.help:setIsChecked(BM.settings.help_min);
+    self.activeFreq:setState(BM.settings.frequency, false);
+    self.activeSizemode:setState(BM.settings.sizeMode, false);
+    self.isTransparent:setIsChecked(BM.settings.transparent);
+    self.transMode:setState(BM.settings.transMode, false);
 end
 
 function ConfigGui:onClose()
@@ -27,8 +32,12 @@ end
 function ConfigGui:onClickOk()
     ConfigGui:superClass().onClickOk(self)
 
-    BM:setAlpha(self.stateAlpha:getIsChecked());
-    BM:changeFreq(self.selectedFreq:getState());
+    BM.settings.visible = self.isVisible:getIsChecked();
+    BM.settings.help_min = self.help:getIsChecked();
+    BM.settings.frequency = self.activeFreq:getState();
+    BM.settings.sizeMode = self.activeSizemode:getState();
+    BM.settings.transparent = self.isTransparent:getIsChecked();
+    BM.settings.transMode = self.transMode:getState();
 
     self:onClickBack()
 end
@@ -48,21 +57,44 @@ function ConfigGui:onLeaveElement(element)
     self:setHelpBoxText("")
 end;
 
-function ConfigGui:setSelectedFreq(index)
-    self.selectedFreq:setState(index, false);
+--- Events ---
+function ConfigGui:onToggleVisible(element)
+    self.isVisible = element;
 end;
 
-function ConfigGui:onChangeFreq(element)
-    self.selectedFreq = element
-    local freq = {}
-    for i = 1, BM.refreshFreqCounter, 1 do
-        freq[i] = tostring(BM.refreshFreq[i]) .. "s"
+function ConfigGui:onToggleHelp(element)
+    self.help = element;
+end;
+
+function ConfigGui:onChangeFrequency(element)
+    self.activeFreq = element;
+    local freq = {};
+    for i = 1, table.getn(BM.const.frequency), 1 do
+        freq[i] = tostring(BM.const.frequency[i]) .. "s";
     end
-    element:setTexts(freq)
+    element:setTexts(freq);
 end;
 
-function ConfigGui:onToggleAlpha(element)
-    self.stateAlpha = element;
+function ConfigGui:onChangeSizemode(element)
+    self.activeSizemode = element;
+    local sm = {};
+    for i = 1, table.getn(BM.const.mapNames), 1 do
+        sm[i] = tostring(BM.const.mapNames[i]);
+    end
+    element:setTexts(sm);
+end;
+
+function ConfigGui:onToggleTransparent(element)
+    self.isTransparent = element;
+end;
+
+function ConfigGui:onChangeTransMode(element)
+    self.transMode = element;
+    local tm = {};
+    for i = 1, table.getn(BM.const.transparent), 1 do
+        tm[i] = tostring(BM.const.transparent[i]);
+    end
+    element:setTexts(tm);
 end;
 
 

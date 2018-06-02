@@ -8,6 +8,24 @@
         <text name="BM_MapMode_S2" text="Growth"/>
         <text name="BM_MapMode_S3" text="Soil composition"/>
 
+        <text name="gui_BM_TITLE" text="Better Minimap - Settings"/>
+        <text name="gui_BM_TOGGLE_VISIBLE" text="Display"/>
+        <text name="gui_BM_TOGGLE_VISIBLE_TOOLTIP" text="Turn on / off the minimap view "/>
+        <text name="gui_BM_TOOGLE_HELP" text="Help"/>
+        <text name="gui_BM_TOGGLE_HELP_TOOLTIP" text="Turn on / off the main help key "/>
+        <text name="gui_BM_REFRESHFREQ" text="Refresh"/>
+        <text name="gui_BM_REFRESHFREQ_TOOLTIP" text="Changing the time needed to retrieve states"/>
+        <text name="gui_BM_SIZEMODE" text="Map size"/>
+        <text name="gui_BM_SIZEMODE_TOOLTIP" text="Resize basic minimap"/>
+        <text name="gui_BM_MAPSIZE_N" text="Normal"/>
+        <text name="gui_BM_MAPSIZE_W" text="Wide"/>
+        <text name="gui_BM_MAPSIZE_L" text="Larger"/>
+        <text name="gui_BM_TRANSPARENT" text="Transparency"/>
+        <text name="gui_BM_TRANSPARENT_TOOLTIP" text="Turn on / of the transparency"/>
+        <text name="gui_BM_TRANSMODE" text="Level Transparency"/>
+        <text name="gui_BM_TRANSMODE_TOOLTIP" text="Changing the level of transparency (smaller number = greater transparency)"/>
+
+        <text name="input_BM_SHOW_CONFIG_GUI" text="Minimap: Open the settings"/>
         <text name="input_BM_TOGGLE_HELP" text="Minimap: Help (on/off)"/>
         <text name="input_BM_RELOAD" text="Minimap: Manual reload"/>
         <text name="input_BM_NEXT" text="Minimap: Next mode"/>

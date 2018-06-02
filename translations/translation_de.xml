@@ -8,12 +8,29 @@
         <text name="BM_MapMode_S2" text="Wachstum"/>
         <text name="BM_MapMode_S3" text="Bodenbeschaffenheit"/>
 
+        <text name="gui_BM_TITLE" text="Bessere Minimap - Einstellungen"/>
+        <text name="gui_BM_TOGGLE_VISIBLE" text="Anzeige"/>
+        <text name="gui_BM_TOGGLE_VISIBLE_TOOLTIP" text="Schalte die Minikarte ein / aus"/>
+        <text name="gui_BM_TOOGLE_HELP" text="Hilfe"/>
+        <text name="gui_BM_TOGGLE_HELP_TOOLTIP" text="Schalten Sie die Haupthilfetaste ein / aus"/>
+        <text name="gui_BM_REFRESHFREQ" text="Wiederherstellung"/>
+        <text name="gui_BM_REFRESHFREQ_TOOLTIP" text="Ändern der Zeit, die zum Abrufen von Status benötigt wird"/>
+        <text name="gui_BM_SIZEMODE" text="Größe"/>
+        <text name="gui_BM_SIZEMODE_TOOLTIP" text="Größe der Basisminikarte ändern"/>
+        <text name="gui_BM_MAPSIZE_N" text="Normal"/>
+        <text name="gui_BM_MAPSIZE_W" text="Breit"/>
+        <text name="gui_BM_MAPSIZE_L" text="Größer"/>
+        <text name="gui_BM_TRANSPARENT" text="Transparenz"/>
+        <text name="gui_BM_TRANSPARENT_TOOLTIP" text="Sie die Transparenz ein / aus"/>
+        <text name="gui_BM_TRANSMODE" text="Transparenzniveau"/>
+        <text name="gui_BM_TRANSMODE_TOOLTIP" text="Ändern der Transparenzstufe (kleinere Anzahl = größere Transparenz)"/>
+
+        <text name="input_BM_SHOW_CONFIG_GUI" text="Minimap: Öffne die Einstellungen"/>
         <text name="input_BM_TOGGLE_HELP" text="Minimap: Hilfe (Ein/Aus)"/>
         <text name="input_BM_RELOAD" text="Minimap: Manuelles Nachladen"/>
         <text name="input_BM_NEXT" text="Minimap: Ein anderer Modus"/>
         <text name="input_BM_PREV" text="Minimap: Vorheriger Modus"/>
         <text name="input_BM_CHANGE_SIZE" text="Minimap: Größe ändern"/>
-        <text name="input_BM_TOGGLE_ALPHA" text="Minimap: Transparenz"/>
         <text name="input_BM_ZOOM_IN" text="Minimap: Heranzoomen"/>
         <text name="input_BM_ZOOM_OUT" text="Minimap: Verkleinern"/>
     </texts>
