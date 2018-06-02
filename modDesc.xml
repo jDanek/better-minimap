@@ -102,6 +102,8 @@ V1.0.0.1
     <iconFilename>icon.dds</iconFilename>
 
     <inputBindings>
+        <input name="BM_SHOW_CONFIG_GUI" category="ONFOOT VEHICLE" key1="KEY_lalt KEY_9" key2="" button="" device="0"
+               mouse=""/>
         <input name="BM_TOGGLE_HELP" category="ONFOOT VEHICLE" key1="KEY_lshift KEY_9" key2="" button="" device="0"
                mouse=""/>
         <input name="BM_RELOAD" category="ONFOOT VEHICLE" key1="KEY_backslash" key2="" button="" device="0"
@@ -110,10 +112,8 @@ V1.0.0.1
                mouse=""/>
         <input name="BM_NEXT" category="ONFOOT VEHICLE" key1="KEY_rightbracket" key2="" button="" device="0"
                mouse=""/>
-        <input name="BM_CHANGE_SIZE" category="ONFOOT VEHICLE" key1="KEY_lalt KEY_9" key2="" button="" device="0"
+        <input name="BM_CHANGE_SIZE" category="ONFOOT VEHICLE" key1="KEY_lshift KEY_lalt KEY_9" key2="" button="" device="0"
                mouse=""/>
-        <input name="BM_TOGGLE_ALPHA" category="ONFOOT VEHICLE" key1="KEY_lshift KEY_lalt KEY_9" key2="" button=""
-               device="0" mouse=""/>
         <input name="BM_ZOOM_IN" category="ONFOOT VEHICLE" key1="KEY_lalt KEY_KP_plus" key2="" button=""
                device="0" mouse=""/>
         <input name="BM_ZOOM_OUT" category="ONFOOT VEHICLE" key1="KEY_lalt KEY_KP_minus" key2="" button=""

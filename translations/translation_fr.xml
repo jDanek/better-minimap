@@ -8,6 +8,24 @@
         <text name="BM_MapMode_S2" text="Croissance"/>
         <text name="BM_MapMode_S3" text="Composition de la terre"/>
 
+        <text name="gui_BM_TITLE" text="Meilleure Minicarte - Paramètres"/>
+        <text name="gui_BM_TOGGLE_VISIBLE" text="Affichage"/>
+        <text name="gui_BM_TOGGLE_VISIBLE_TOOLTIP" text="Activer / désactiver la vue de minicarte"/>
+        <text name="gui_BM_TOOGLE_HELP" text="Aide"/>
+        <text name="gui_BM_TOGGLE_HELP_TOOLTIP" text="Activer / désactiver la touche d'aide principale"/>
+        <text name="gui_BM_REFRESHFREQ" text="Restaurer"/>
+        <text name="gui_BM_REFRESHFREQ_TOOLTIP" text="Modifier le temps nécessaire pour récupérer les états"/>
+        <text name="gui_BM_SIZEMODE" text="Taille"/>
+        <text name="gui_BM_SIZEMODE_TOOLTIP" text="Redimensionner la mini-carte de base"/>
+        <text name="gui_BM_MAPSIZE_N" text="Normal"/>
+        <text name="gui_BM_MAPSIZE_W" text="Large"/>
+        <text name="gui_BM_MAPSIZE_L" text="Plus grand"/>
+        <text name="gui_BM_TRANSPARENT" text="Transparence"/>
+        <text name="gui_BM_TRANSPARENT_TOOLTIP" text="Activer / désactiver la transparence"/>
+        <text name="gui_BM_TRANSMODE" text="Niveau de transparence"/>
+        <text name="gui_BM_TRANSMODE_TOOLTIP" text="Changer le niveau de transparence (plus petit nombre = plus de transparence)"/>
+
+        <text name="input_BM_SHOW_CONFIG_GUI" text="Minicarte: Ouvrir les paramètres"/>
         <text name="input_BM_TOGGLE_HELP" text="Minicarte: Aide (On/Off)"/>
         <text name="input_BM_RELOAD" text="Minicarte: Rechargement manuel"/>
         <text name="input_BM_NEXT" text="Minicarte: Un autre mode"/>

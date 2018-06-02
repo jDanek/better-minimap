@@ -8,13 +8,30 @@
         <text name="BM_MapMode_S2" text="Růst"/>
         <text name="BM_MapMode_S3" text="Složení půdy"/>
 
+        <text name="gui_BM_TITLE" text="Lepší Minimapa - nastavení"/>
+        <text name="gui_BM_TOGGLE_VISIBLE" text="Zobrazení"/>
+        <text name="gui_BM_TOGGLE_VISIBLE_TOOLTIP" text="Zapnutí / vypnutí zobrazení minimapy"/>
+        <text name="gui_BM_TOGGLE_HELP" text="Nápověda"/>
+        <text name="gui_BM_TOGGLE_HELP_TOOLTIP" text="Zapnutí / vypnutí zobrazení hlavní klávesy nápovědy"/>
+        <text name="gui_BM_REFRESHFREQ" text="Obnovení"/>
+        <text name="gui_BM_REFRESHFREQ_TOOLTIP" text="Změna času potřebného ke znovunačtení stavů"/>
+        <text name="gui_BM_SIZEMODE" text="Velikost"/>
+        <text name="gui_BM_SIZEMODE_TOOLTIP" text="Změna velikosti základní minimapy"/>
+        <text name="gui_BM_MAPSIZE_N" text="Normální"/>
+        <text name="gui_BM_MAPSIZE_W" text="Široká"/>
+        <text name="gui_BM_MAPSIZE_L" text="Větší"/>
+        <text name="gui_BM_TRANSPARENT" text="Průhlenost"/>
+        <text name="gui_BM_TRANSPARENT_TOOLTIP" text="Zapnutí / vypnutí průhlednosti"/>
+        <text name="gui_BM_TRANSMODE" text="Úroveň průhlednost"/>
+        <text name="gui_BM_TRANSMODE_TOOLTIP" text="Změna úrovně průhlednosti (menší číslo = větší průhlednost)"/>
+
+        <text name="input_BM_SHOW_CONFIG_GUI" text="Minimapa: Otevřít nastavení"/>
         <text name="input_BM_TOGGLE_HELP" text="Minimapa: Nápověda(Zap/Vyp)"/>
         <text name="input_BM_RELOAD" text="Minimapa: Manuální obnovení"/>
         <text name="input_BM_NEXT" text="Minimapa: Následující režim"/>
         <text name="input_BM_PREV" text="Minimapa: Předchozí režim"/>
         <text name="input_BM_CHANGE_SIZE" text="Minimapa: Změnit velikost"/>
-        <text name="input_BM_TOGGLE_ALPHA" text="Minimapa: Průhlednost"/>
-        <text name="input_BM_ZOOM_IN" text="Minimapa: Přiblíení"/>
+        <text name="input_BM_ZOOM_IN" text="Minimapa: Přiblížení"/>
         <text name="input_BM_ZOOM_OUT" text="Minimapa: Oddálení"/>
     </texts>
 </l10n>
