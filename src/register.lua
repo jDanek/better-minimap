@@ -16,6 +16,7 @@ BM.mapEvents = {};
 
 --- Constants ---
 BM.const = {};
+BM.const.settings_file = g_modsDirectory .. "BM_Settings.xml";
 BM.const.frequency = { 15, 30, 45, 60 }; -- refresh frequency (in sec)
 BM.const.mapSizes = { { 456, 350 }, { 800, 350 }, { 800, 600 } }; -- minimap sizes {width, height}
 BM.const.mapNames = { g_i18n:getText("gui_BM_MAPSIZE_N"), g_i18n:getText("gui_BM_MAPSIZE_W"), g_i18n:getText("gui_BM_MAPSIZE_L") };
@@ -25,7 +26,8 @@ BM.const.transparent = { 0.3, 0.5, 0.7 };
 BM.settings = {};
 BM.settings.init = false;
 BM.settings.mapUpdate = false;
-BM.settings.visible = false;
+BM.settings.saveSettings = false;
+BM.settings.visible = true;
 BM.settings.help_min = true;
 BM.settings.help_full = false;
 BM.settings.fullscreen = false;
@@ -42,24 +44,31 @@ function BM:init()
     self.zoomFactor = 0.0007;
     self.visWidth = 0.3;
 
-    --self.overlayWidth = width or 1 / 3;
     self.pixelWidth = (1 / 3) / 1024.0;
     self.pixelHeight = self.pixelWidth * g_screenAspectRatio;
 
-    -- set default map size
-    self.mapWidth = self.const.mapSizes[1][1] * self.pixelWidth;
-    self.mapHeight = self.const.mapSizes[1][2] * self.pixelHeight;
+    -- set default map properties
+    self.mapWidth = self.const.mapSizes[self.settings.sizeMode][1] * self.pixelWidth;
+    self.mapHeight = self.const.mapSizes[self.settings.sizeMode][2] * self.pixelHeight;
 end;
 
 function BM:loadMap(name)
+    -- load setttings from xml
+    if (not fileExists(self.const.settings_file)) then
+        self:saveBMSettings(self.const.settings_file);
+    else
+        self:loadBMSettings(self.const.settings_file);
+    end ;
+
     self.timer = 0;
     self.needUpdateFruitOverlay = true;
+    self.settings.mapUpdate = true;
 
     -- config gui
     self.ConfigGui = ConfigGui:new()
     g_gui:loadGui(Utils.getFilename("src/gui/ConfigGui.xml", BM.moddir), "ConfigGui", self.ConfigGui)
 
-    -- counting fruits (need for right switching map mode)
+    -- counting seedable fruits (need for right switching map mode)
     self.numberOfFruits = 0;
     for fruitId in pairs(FruitUtil.fruitTypes) do
         if (FruitUtil.fruitTypes[fruitId].needsSeeding) then
@@ -148,8 +157,11 @@ function BM:update(dt)
             if (self.settings.fullscreen) then
                 self.mapWidth, self.mapHeight = ingameMap.maxMapWidth, ingameMap.maxMapHeight;
                 self.alpha = self.const.transparent[self.settings.transMode];
+                self.visWidth = ingameMap.mapVisWidthMax;
+                g_currentMission.ingameMap.state = IngameMap.STATE_MAP; -- compatibility
             else
                 self.settings.mapUpdate = true;
+                g_currentMission.ingameMap.state = IngameMap.STATE_MINIMAP; -- compatibility
             end ;
         end ;
 
@@ -164,13 +176,20 @@ function BM:update(dt)
             end ;
         end ;
 
+        -- update overlay
+        if (self.needUpdateFruitOverlay) then
+            self.needUpdateFruitOverlay = false;
+            self:generateFruitOverlay();
+        end ;
+
+        -- refresh map properties by settings
         if (self.settings.mapUpdate) then
             self:renderSelectedMinimap();
         end ;
 
-        if (self.needUpdateFruitOverlay) then
-            self.needUpdateFruitOverlay = false;
-            self:generateFruitOverlay();
+        -- save settings to XML
+        if (self.settings.saveSettings and fileExists(self.const.settings_file)) then
+            self:saveBMSettings(self.const.settings_file);
         end ;
     end ;
 end;
@@ -290,6 +309,29 @@ function BM:generateFruitOverlay()
     g_inGameMenu:generateFruitOverlay();
     g_inGameMenu.mapOverviewSelector.state = origState;
     self.timer = 0;
+end;
+
+function BM:saveBMSettings(fileName)
+    local xml = createXMLFile("BetterMinimap", fileName, "BetterMinimap");
+    setXMLBool(xml, "BetterMinimap.visible", self.settings.visible);
+    setXMLBool(xml, "BetterMinimap.help", self.settings.help_min);
+    setXMLInt(xml, "BetterMinimap.frequency", self.settings.frequency);
+    setXMLInt(xml, "BetterMinimap.sizeMode", self.settings.sizeMode);
+    setXMLBool(xml, "BetterMinimap.transparency", self.settings.transparent);
+    setXMLInt(xml, "BetterMinimap.transMode", self.settings.transMode);
+    saveXMLFile(xml);
+    delete(xml);
+end;
+
+function BM:loadBMSettings(fileName)
+    local xml = loadXMLFile("BetterMinimap", fileName);
+    self.settings.visible = Utils.getNoNil(getXMLBool(xml, "BetterMinimap.visible"), self.settings.visible);
+    self.settings.help_min = Utils.getNoNil(getXMLBool(xml, "BetterMinimap.help"), self.settings.help_min);
+    self.settings.frequency = Utils.getNoNil(getXMLInt(xml, "BetterMinimap.frequency"), self.settings.frequency);
+    self.settings.sizeMode = Utils.getNoNil(getXMLInt(xml, "BetterMinimap.sizeMode"), self.settings.sizeMode);
+    self.settings.transparent = Utils.getNoNil(getXMLBool(xml, "BetterMinimap.transparency"), self.settings.transparent);
+    self.settings.transMode = Utils.getNoNil(getXMLInt(xml, "BetterMinimap.transMode"), self.settings.transMode);
+    delete(xml);
 end;
 
 BM:init();

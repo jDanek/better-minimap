@@ -68,8 +68,6 @@
                     <GuiElement type="bitmap" profile="multiTextOptionBg"/>
                 </GuiElement>
 
-
-
             </GuiElement>
             <GuiElement type="bitmap" profile="ingameMenuHelpRowBg" id="ingameMenuHelpBox" visible="false"
                         position="0px 40px">

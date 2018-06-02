@@ -1,13 +1,13 @@
-ConfigGui = {}
-local ConfigGui_mt = Class(ConfigGui, ScreenElement)
+ConfigGui = {};
+local ConfigGui_mt = Class(ConfigGui, ScreenElement);
 
 function ConfigGui:new(target, custom_mt)
     if custom_mt == nil then
-        custom_mt = ConfigGui_mt
-    end
-    local self = ScreenElement:new(target, custom_mt)
-    self.returnScreenName = ""
-    return self
+        custom_mt = ConfigGui_mt;
+    end ;
+    local self = ScreenElement:new(target, custom_mt);
+    self.returnScreenName = "";
+    return self;
 end
 
 function ConfigGui:onOpen()
@@ -22,15 +22,15 @@ function ConfigGui:onOpen()
 end
 
 function ConfigGui:onClose()
-    ConfigGui:superClass().onClose(self)
-end
+    ConfigGui:superClass().onClose(self);
+end;
 
 function ConfigGui:onClickBack()
-    ConfigGui:superClass().onClickBack(self)
-end
+    ConfigGui:superClass().onClickBack(self);
+end;
 
 function ConfigGui:onClickOk()
-    ConfigGui:superClass().onClickOk(self)
+    ConfigGui:superClass().onClickOk(self);
 
     BM.settings.visible = self.isVisible:getIsChecked();
     BM.settings.help_min = self.help:getIsChecked();
@@ -39,23 +39,27 @@ function ConfigGui:onClickOk()
     BM.settings.transparent = self.isTransparent:getIsChecked();
     BM.settings.transMode = self.transMode:getState();
 
+    -- mapUpdate
     BM.settings.mapUpdate = true;
-    self:onClickBack()
-end
+    -- saveToXML
+    BM.settings.saveSettings = true;
+    -- close dialog
+    self:onClickBack();
+end;
 
 function ConfigGui:setHelpBoxText(text)
-    self.ingameMenuHelpBoxText:setText(text)
-    self.ingameMenuHelpBox:setVisible(text ~= "")
-end
+    self.ingameMenuHelpBoxText:setText(text);
+    self.ingameMenuHelpBox:setVisible(text ~= "");
+end;
 
 function ConfigGui:onFocusElement(element)
     if (element.toolTip ~= nil) then
-        self:setHelpBoxText(element.toolTip)
+        self:setHelpBoxText(element.toolTip);
     end ;
 end;
 
 function ConfigGui:onLeaveElement(element)
-    self:setHelpBoxText("")
+    self:setHelpBoxText("");
 end;
 
 --- Events ---
