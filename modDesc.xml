@@ -133,13 +133,13 @@ V1.0.0.1
 + Dodano polskie tłumaczenie
 
 V1.1.0.0
-+ Dodano kompatybilność do modyfikacji: Tardis Teleport
-+ Dodano konfigurację gui i scalanie ustawień
-+ Dodano opcję pełnego ukrywania minimapów
-+ Dodano ustawienia odświeżania
-+ Dodawanie poziomu przezroczystości
++ Dodano kompatybilność z modem: Tardis Teleport
++ Dodano możliwość konfiguracji poprzez okno ustawień
++ Dodano opcję całkowitego ukrycia minimapy
++ Dodano możliwość zmiany czasu odświeżania stanów
++ Dodawanie konfigurację stipnia przezroczystości
 + Dodano zapis ustawień do pliku XML
-- Zmień niektóre klawisze
+- Zostały zmienione klawisze niektórych funkcji (wymagany reset klawiszologi) 
 ]]></pl>
     </description>
 
