@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="39">
-    <version>1.0.0.1</version>
+    <version>1.1.0.0</version>
     <author>jDanek</author>
     <title>
         <en>Better Minimap</en>
@@ -35,6 +35,7 @@ V1.1.0.0
 + Added refresh settings
 + Adding a transparency level
 + Added saving of settings to an XML file
++ New mod icon
 - Change some keys
 ]]></en>
         <de><![CDATA[
@@ -61,6 +62,7 @@ V1.1.0.0
 + Aktualisierungseinstellungen hinzugefügt
 + Hinzufügen einer Transparenzstufe
 + Hinzufügen von Einstellungen in einer XML-Datei
++ Neues Mod-Symbol
 - Ändern Sie einige Schlüssel
 ]]></de>
         <fr><![CDATA[
@@ -87,6 +89,7 @@ V1.1.0.0
 + Ajout de paramètres d'actualisation
 + Ajout d'un niveau de transparence
 + Ajout de la sauvegarde des paramètres dans un fichier XML
++ Nouvelle icône de mod
 - Changer certaines clés
 ]]></fr>
         <cz><![CDATA[
@@ -113,6 +116,7 @@ V1.1.0.0
 + Přidáno nastavení obnovování
 + Přidána volba urovně průhlednosti
 + Přidáno uložení nastavení do XML souboru
++ Nová ikona módu
 - Změna některých kláves
 ]]></cz>
         <pl><![CDATA[
@@ -139,6 +143,7 @@ V1.1.0.0
 + Dodano możliwość zmiany czasu odświeżania stanów
 + Dodawanie konfigurację stipnia przezroczystości
 + Dodano zapis ustawień do pliku XML
++ Nowa ikona modu
 - Zostały zmienione klawisze niektórych funkcji (wymagany reset klawiszologi) 
 ]]></pl>
     </description>
