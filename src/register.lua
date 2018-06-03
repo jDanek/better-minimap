@@ -277,7 +277,6 @@ function BM:renderModHelp()
             g_currentMission:addHelpButtonText(g_i18n:getText("input_BM_RELOAD"), InputBinding.BM_RELOAD, nil, GS_PRIO_HIGH);
             g_currentMission:addHelpButtonText(g_i18n:getText("input_BM_ZOOM_IN"), InputBinding.BM_ZOOM_IN, nil, GS_PRIO_HIGH);
             g_currentMission:addHelpButtonText(g_i18n:getText("input_BM_ZOOM_OUT"), InputBinding.BM_ZOOM_OUT, nil, GS_PRIO_HIGH);
-            g_currentMission:addHelpButtonText(g_i18n:getText("input_BM_CHANGE_SIZE"), InputBinding.BM_CHANGE_SIZE, nil, GS_PRIO_HIGH);
         end ;
     end ;
 end;

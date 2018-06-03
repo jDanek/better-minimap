@@ -30,7 +30,6 @@
         <text name="input_BM_RELOAD" text="Minimapa: Manuální obnovení"/>
         <text name="input_BM_NEXT" text="Minimapa: Následující režim"/>
         <text name="input_BM_PREV" text="Minimapa: Předchozí režim"/>
-        <text name="input_BM_CHANGE_SIZE" text="Minimapa: Změnit velikost"/>
         <text name="input_BM_ZOOM_IN" text="Minimapa: Přiblížení"/>
         <text name="input_BM_ZOOM_OUT" text="Minimapa: Oddálení"/>
     </texts>

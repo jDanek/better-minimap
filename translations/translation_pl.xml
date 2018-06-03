@@ -30,7 +30,6 @@
         <text name="input_BM_RELOAD" text="Minimapa: Odśwież ręcznie"/>
         <text name="input_BM_NEXT" text="Minimapa: Następny tryb"/>
         <text name="input_BM_PREV" text="Minimapa: Poprzedni tryb"/>
-        <text name="input_BM_CHANGE_SIZE" text="Minimapa: Zmiana rozmiaru"/>
         <text name="input_BM_ZOOM_IN" text="Minimapa: Przybliż"/>
         <text name="input_BM_ZOOM_OUT" text="Minimapa: Oddal"/>
     </texts>

@@ -30,7 +30,6 @@
         <text name="input_BM_RELOAD" text="Minimap: Manuelles Nachladen"/>
         <text name="input_BM_NEXT" text="Minimap: Ein anderer Modus"/>
         <text name="input_BM_PREV" text="Minimap: Vorheriger Modus"/>
-        <text name="input_BM_CHANGE_SIZE" text="Minimap: Größe ändern"/>
         <text name="input_BM_ZOOM_IN" text="Minimap: Heranzoomen"/>
         <text name="input_BM_ZOOM_OUT" text="Minimap: Verkleinern"/>
     </texts>
