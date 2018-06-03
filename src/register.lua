@@ -91,8 +91,19 @@ function BM:update(dt)
     -- activate mod if not activated
     if (not self.settings.init) then
         self.settings.init = true;
+        g_currentMission.ingameMap.state = IngameMap.STATE_MINIMAP;
         self:show();
     end ;
+
+    -- TARDIS mod compatibility
+    if g_modIsLoaded["FS17_TARDIS"] then
+        if (g_currentMission.tardisBase.tardisOn ~= nil and self.settings.fullscreen) then
+            self:hide();
+        else
+            g_currentMission.ingameMap.state = IngameMap.STATE_MINIMAP;
+            self:show();
+        end;
+    end;
 
     local ingameMap = g_currentMission.ingameMap;
 
@@ -154,14 +165,14 @@ function BM:update(dt)
             -- toggle fulscreen
             self.settings.fullscreen = not self.settings.fullscreen;
 
+            g_currentMission.ingameMap.state = self.settings.fullscreen and IngameMap.STATE_MAP or IngameMap.STATE_MINIMAP;
+
             if (self.settings.fullscreen) then
                 self.mapWidth, self.mapHeight = ingameMap.maxMapWidth, ingameMap.maxMapHeight;
                 self.alpha = self.const.transparent[self.settings.transMode];
                 self.visWidth = ingameMap.mapVisWidthMax;
-                g_currentMission.ingameMap.state = IngameMap.STATE_MAP; -- compatibility
             else
                 self.settings.mapUpdate = true;
-                g_currentMission.ingameMap.state = IngameMap.STATE_MINIMAP; -- compatibility
             end ;
         end ;
 
