@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>Gonimy_Vetrom</translationContributors>
+    <texts>
+        <text name="BM_MapMode" text="Отображается:"/>
+        <text name="BM_MapMode_S0" text="Только карта"/>
+        <text name="BM_MapMode_S1" text="Типы культур"/>
+        <text name="BM_MapMode_S2" text="Рост"/>
+        <text name="BM_MapMode_S3" text="Состояние почвы"/>
+
+        <text name="gui_BM_TITLE" text="Better Minimap - Настройки"/>
+        <text name="gui_BM_TOGGLE_VISIBLE" text="Отображение"/>
+        <text name="gui_BM_TOGGLE_VISIBLE_TOOLTIP" text="Вкл/выкл отображение миникарты"/>
+        <text name="gui_BM_TOGGLE_HELP" text="Подсказки"/>
+        <text name="gui_BM_TOGGLE_HELP_TOOLTIP" text="Вкл/Выкл отображения сочетаний клавиш "/>
+        <text name="gui_BM_REFRESHFREQ" text="Обновление"/>
+        <text name="gui_BM_REFRESHFREQ_TOOLTIP" text="Изменение времени необходимого для проверки состояния"/>
+        <text name="gui_BM_SIZEMODE" text="Размер карты"/>
+        <text name="gui_BM_SIZEMODE_TOOLTIP" text="Изменение размера основной карты"/>
+        <text name="gui_BM_MAPSIZE_N" text="Стандартная"/>
+        <text name="gui_BM_MAPSIZE_W" text="Широкая"/>
+        <text name="gui_BM_MAPSIZE_L" text="Высокая"/>
+        <text name="gui_BM_TRANSPARENT" text="Прозрачность"/>
+        <text name="gui_BM_TRANSPARENT_TOOLTIP" text="Вкл/Выкл прозрачности"/>
+        <text name="gui_BM_TRANSMODE" text="Уровень прозрачности"/>
+        <text name="gui_BM_TRANSMODE_TOOLTIP" text="Изменение уровня прозрачности (чем меньше число, тем больше прозрачность)"/>
+
+        <text name="input_BM_SHOW_CONFIG_GUI" text="Миникарта: Открыть настройки"/>
+        <text name="input_BM_TOGGLE_HELP" text="Миникарта: Подсказки"/>
+        <text name="input_BM_RELOAD" text="Миникарта: Ручное обновление"/>
+        <text name="input_BM_NEXT" text="Миникарта: Следующий режим"/>
+        <text name="input_BM_PREV" text="Миникарта: Предыдущий режим"/>
+        <text name="input_BM_ZOOM_IN" text="Миникарта: Увеличить масштаб"/>
+        <text name="input_BM_ZOOM_OUT" text="Миникарта: Уменьшить масштаб"/>
+    </texts>
+</l10n>
