@@ -177,8 +177,6 @@ V1.0.0.1
                mouse=""/>
         <input name="BM_NEXT" category="ONFOOT VEHICLE" key1="KEY_rightbracket" key2="" button="" device="0"
                mouse=""/>
-        <input name="BM_CHANGE_SIZE" category="ONFOOT VEHICLE" key1="KEY_lshift KEY_lalt KEY_9" key2="" button="" device="0"
-               mouse=""/>
         <input name="BM_ZOOM_IN" category="ONFOOT VEHICLE" key1="KEY_lalt KEY_KP_plus" key2="" button=""
                device="0" mouse=""/>
         <input name="BM_ZOOM_OUT" category="ONFOOT VEHICLE" key1="KEY_lalt KEY_KP_minus" key2="" button=""
